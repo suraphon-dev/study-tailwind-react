@@ -1,6 +1,10 @@
+import ContactList from '@/components/ContactList'
+
 export default function Home() {
    return (
       <>
+         <ContactList />
+
          <div className="flex items-center max-w-sm p-6  my-6 bg-white mx-auto shadow-lg  rounded-xl gap-4 dark:bg-slate-800 dark:shadow-none">
             <img className="size-12" src="/images/chaticon.svg" alt="icon" />
             <div>

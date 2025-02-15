@@ -1,4 +1,5 @@
 import { useState } from 'react'
+import { Link } from 'react-router'
 
 export default function Navbar() {
    const [isOpen, setIsOpen] = useState(false)
@@ -13,24 +14,24 @@ export default function Navbar() {
                {/* Menu Desktop */}
                <ul className="hidden md:flex space-x-4">
                   <li>
-                     <a href="#" className="hover:text-gray-200">
+                     <Link to="/" className="hover:text-gray-200">
                         Home
-                     </a>
+                     </Link>
                   </li>
                   <li>
-                     <a href="#" className="hover:text-gray-200">
+                     <Link to="/about" className="hover:text-gray-200">
                         About
-                     </a>
+                     </Link>
                   </li>
                   <li>
-                     <a href="#" className="hover:text-gray-200">
+                     <Link to="/service" className="hover:text-gray-200">
                         Service
-                     </a>
+                     </Link>
                   </li>
                   <li>
-                     <a href="#" className="hover:text-gray-200">
+                     <Link to="/contact" className="hover:text-gray-200">
                         Contact
-                     </a>
+                     </Link>
                   </li>
                </ul>
                {/* Button Hamburger */}
@@ -43,24 +44,24 @@ export default function Navbar() {
             {/* Menu Mobile */}
             <ul className={`md:hidden flex-col space-y-4 p-4 ${isOpen ? 'block' : 'hidden'} `}>
                <li>
-                  <a href="#" className="block text-center">
+                  <Link to="/" className="block text-center">
                      Home
-                  </a>
+                  </Link>
                </li>
                <li>
-                  <a href="#" className="block text-center">
+                  <Link to="/about" className="block text-center">
                      About
-                  </a>
+                  </Link>
                </li>
                <li>
-                  <a href="#" className="block text-center">
+                  <Link to="/service" className="block text-center">
                      Service
-                  </a>
+                  </Link>
                </li>
                <li>
-                  <a href="#" className="block text-center">
+                  <Link to="/contact" className="block text-center">
                      Contact
-                  </a>
+                  </Link>
                </li>
             </ul>
          </nav>
